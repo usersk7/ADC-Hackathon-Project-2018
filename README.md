@@ -1,4 +1,4 @@
-# ADC-Hackathon_Project-SIH :After Death Care
+# Smart India Hackathon 2018 Project : After Death Care
 
 Ministry/State : Ministry of Health & Family WelfareSector : Health & Social WelfareCategory : softwarePriority : high Total Submissions : 62 #MHF9
 
