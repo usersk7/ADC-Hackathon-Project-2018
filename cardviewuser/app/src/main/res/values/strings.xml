@@ -1,0 +1,7 @@
+<resources>
+<string name="app_name">After Death Care</string>
+<string name="req">Request Van</string>
+<string name="source">Enter Source</string>
+<string name="dest">Enter Destination</string>
+<string name="plzselect">Please Select</string>
+</resources>
