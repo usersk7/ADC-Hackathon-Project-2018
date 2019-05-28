@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ADC</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+  
+  <style>
+  .hide{
+      display: none;
+  }
+  .view,body,html{
+    height:100%}
+    @media (max-width:740px){
+      .full-page-intro{height:1000px}
+    }.carousel{height:50%}
+    .carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item
+    {height:100%}@media (max-width:776px){.carousel{height:100%}}.navbar{background-color:rgba(0,0,0,.3)}
+    .page-footer,.top-nav-collapse{background-color:#1C2331}
+    @media only screen and (max-width:768px)
+    {.navbar{background-color:#1C2331}}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <strong>ADC</strong>
+      </a>
+
+     
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-md-4">
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4">
+
+            
+                <div class="card border border-white z-depth-5 animated fadeInRight" style="background:transparent;">
+                    <div class="card-body text-center">
+              	<p><h3 class="h3-responsive white-text text-center">Select who you are</h3></p><br>
+<button type="button" data-toggle="modal" data-target="#modalContactForm" class="btn btn-default btn-lg btn-block"><i class="fa fa-user mr-3"></i>Admin Login</button>
+<br>
+<button type="button" data-toggle="modal" data-target="#modalContactForm" class="btn btn-light-blue btn-lg btn-block"><i class="fa fa-user mr-3"></i>Consumer Login</button>
+<br>
+<button type="button" data-toggle="modal" data-target="#modalContactForm" class="btn btn-default btn-lg btn-block"><i class="fa fa-user mr-3"></i>Van Provider</button>
+</div>
+</div>
+              
+
+          </div>
+          <!--Grid column-->
+          <div class="col-md-4">
+          </div>
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--Modal: Contact form-->
+    <div class="modal-dialog cascading-modal" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header primary-color white-text">
+                <h4 class="title">
+                    <i class="fa fa-pencil"></i> Contact form</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+
+                <!-- Material input name -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="email" id="email" class="form-control form-control-sm">
+                    <label for="materialFormNameModalEx1">Email Id</label>
+                </div>
+
+                <!-- Material input email -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="text" id="pass" class="form-control form-control-sm">
+                    <label for="materialFormEmailModalEx1">Password</label>
+                </div>
+
+              
+
+                <div class="text-center mt-4 mb-2">
+                    <button id="signin" class="btn btn-primary">Sign In
+                        <i class="fa fa-sign-in ml-2"></i>
+                    </button>
+                </div>
+
+                <div class="text-center mt-4 mb-2">
+                    <button id="signup" class="btn btn-primary">Sign Up
+                        <i class="fa fa-sign-in ml-2"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+    <!--/Modal: Contact form-->
+</div>
+                      
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small  wow fadeIn" style="margin-top: -24px;">
+
+
+    <hr class="my-4">
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="#"> ADC.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="Fire1.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

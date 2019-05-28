@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript">
+    var created = 0;
+
+        function displayAccordingly() {
+
+            if (created == 1) {
+                removeDrop();
+            }
+
+            //Call mainMenu the main dropdown menu
+            var mainMenu = document.getElementById('mainMenu');
+
+            //Create the new dropdown menu
+            var whereToPut = document.getElementById('myDiv');
+            var newDropdown = document.createElement('select');
+            newDropdown.setAttribute('id',"newDropdownMenu");
+            whereToPut.appendChild(newDropdown);
+
+            if (mainMenu.value == "Road") { //The person chose fruit
+               
+                
+                
+                
+                //Add an option called "Apple"
+                var optionBasic=document.createElement("option");
+                optionBasic.text="Basic Life Support Ambulance";
+                newDropdown.add(optionBasic,newDropdown.options[null]);
+
+                //Add an option called "Banana"
+                var optionAdvance=document.createElement("option");
+                optionAdvance.text="Advance Life Support Ambulance ";
+                newDropdown.add(optionAdvance,newDropdown.options[null]);
+                
+                
+                //
+                var optionNeoratal=document.createElement("option");
+                optionNeoratal.text="Neoratal Ambulance ";
+                newDropdown.add(optionNeoratal,newDropdown.options[null]);
+                
+                
+                //
+                 var optionMortuary=document.createElement("option");
+                optionMortuary.text="Mortaury Van";
+                newDropdown.add(optionMortuary,newDropdown.options[null]);
+                
+
+            }
+
+            created = 1
+
+        }
+//
+        function removeDrop() {
+            var d = document.getElementById('myDiv');
+
+            var oldmenu = document.getElementById('newDropdownMenu');
+
+            d.removeChild(oldmenu);
+        }
+    </script>
+    </head>
+    <body>
+        <select id="mainMenu" onchange="displayAccordingly()">
+        <option value="">--</option>
+        <option value="Road">Road Ambulance</option>
+        <option value="vegetable">Air Ambulance</option>
+            <option value="vegetable">Train Ambulance</option>
+            <option value="vegetable">Water Ambulance</option>
+        </select>
+        <div id="myDiv"></div>
+    </body>
+
+</html>

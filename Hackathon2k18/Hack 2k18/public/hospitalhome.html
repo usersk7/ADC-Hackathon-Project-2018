@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ADC</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                    <strong class="blue-text">After Death Care</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect mr-5" href="hospitalhome.html">Hospital Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="index.html">Logout
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+ <main>
+<br><br><br><br><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header blue white-text text-center"><h2>I Want To</h2></div>
+            <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card z-index-5">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Calculate Fare</h2>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#calModal">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: {lat: 21.7679, lng: 78.8718}
+        });
+        directionsDisplay.setMap(map);
+
+        document.getElementById('submit').addEventListener('click', function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: document.getElementById('start').value,
+          destination: document.getElementById('end').value,
+          //waypoints: waypts,
+          optimizeWaypoints: true,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            var summaryPanel = document.getElementById('directions-panel');
+            summaryPanel.innerHTML = '';
+            // For each route, display summary information.
+            for (var i = 0; i < route.legs.length; i++) {
+              var routeSegment = i + 1;
+              summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+                  '</b><br>';
+              summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
+              summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+              summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+              var total =parseFloat(route.legs[i].distance.text);
+              //var  ttt = " km".replace('km','');
+              //console.log(ttt,total);
+              // var t=[];
+              // t=total.split(',');
+              total *=7;
+              
+              summaryPanel.innerHTML += '<span style="color:blue;" >Approximately Fare : ' +total +'</span>';
+            }
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVJekwQfXQbTPkpcVdIqtvSoCsJ9OKVX4&callback=initMap">
+    </script>
+            <div class="col-sm">
+                 <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Request A Van</h2>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">See Previous Trip</h2>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#previousModal">Show</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                 <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Track a Van</h2>
+                        <a href="live.html"><button class="btn btn-primary">Track</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal animated zoomIn"  data-backdrop="false" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request A Van</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+<!-- Material input -->
+<div class="md-form">
+    <input type="text" id="source" class="form-control">
+    <label for="form1" >Source Address</label>
+</div>
+   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="dest" class="form-control">
+    <label for="form1" >Destination Address</label>
+
+</div>
+<!-- Material input -->
+<div class="md-form">
+    <input type="text" id="pin" class="form-control">
+    <label for="form1" >Pincode</label>
+</div>
+
+<!-- Material input -->
+<div class="md-form">
+    <input type="text" id="cno" class="form-control">
+    <label for="form1" >Contact No</label>
+</div>
+<!-- Material input -->
+<div class="md-form">
+    <input type="text" id="seccode" class="form-control">
+    <label for="form1" >Security Code</label>
+</div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="req" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+        
+<!-- Modal -->
+<div class="modal animated zoomIn"  data-backdrop="false" id="calModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Calculate Fare</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+            <div class="col-sm-4">
+                <div class="md-form">
+    <input type="text" id="start" class="form-control">
+    <label for="start" >From</label>
+</div>
+ 
+    <div class="md-form">
+    <input type="text" id="end" class="form-control">
+    <label for="end" >To</label>
+            </div>
+            <input type="submit" class="btn btn-primary" id="submit">
+            <br/><br>
+            <div class="card wow fadeIn">
+                <div class="card-body">
+                    Approximate Fare
+            <div id="directions-panel"></div></div>
+            </div>
+        </div>
+            <div class="col-sm-8"><div id="map" class="z-depth-1" style="height: 500px"></div></div>
+        </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>                        
+
+
+<!-- Modal -->
+<div class="modal animated zoomIn"  data-backdrop="false" id="previousModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Previous Trip</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <table class="table table-hover" id="table">
+
+    <!--Table head-->
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Pincode</th>
+        </tr>
+    </thead>
+    <!--Table head-->
+
+    <!--Table body-->
+    <tbody id="table_body">
+        
+    </tbody>
+    <!--Table body-->
+
+</table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+<!-- Modal -->
+<!-- <div class="modal animated zoomIn"  data-backdrop="false" id="trackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+    <!-- <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> -->
+        <!-- <div class="modal-content"> -->
+            <!-- <div class="modal-header"> -->
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Track A Van</h5> -->
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                <!-- </button> -->
+            <!-- </div> -->
+            <!-- <div class="modal-body"> -->
+
+
+            <!-- </div> -->
+
+            <!-- <div class="modal-footer"> -->
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div>   -->
+        <div class="container">
+<br><br><br><br>
+            <!--Section: Cards-->   
+
+<br><br>
+
+
+
+<!--Table-->
+
+</main>
+
+
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small">
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="index.html">afterdeathcare.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  
+    <script type="text/javascript">
+        
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZcLIz_1tbIUApRytA1ciq4r2lBU0PCNc",
+    authDomain: "adch-9c89f.firebaseapp.com",
+    databaseURL: "https://adch-9c89f.firebaseio.com",
+    projectId: "adch-9c89f",
+    storageBucket: "adch-9c89f.appspot.com",
+    messagingSenderId: "196006506550"
+  };
+  firebase.initializeApp(config);
+
+  var ref = firebase.database().ref().child('Request');
+  ref.on('value', function(snap){
+    var dest=snap.child('101').child('destination').val();
+var pin=snap.child('101').child('pin').val();
+    var source=snap.child('101').child('source').val();
+  $("#table_body").append("<tr><td>"+source+"</td><td>"+dest+"</td><td>"+pin+"</td></tr>");
+    
+  });
+
+
+const req=document.getElementById('req');
+const pin=document.getElementById('pin');
+const dest=document.getElementById('dest');
+const source=document.getElementById('source');
+const seccode=document.getElementById('seccode');
+const cno=document.getElementById('cno');
+
+req.addEventListener('click', e=>{
+var pin1=pin.value;
+var dest1=dest.value;
+var source1=source.value;
+var seccode1=seccode.value;
+var cno1=cno.value;
+
+var id=Math.floor((Math.random() * 100) + 1);
+
+var write = firebase.database().ref().child('creatrtrip').child(id);
+write.set({source: source1,dest: dest1,pin: pin1,seccode: seccode1,contact: cno1});
+
+
+var write = firebase.database().ref().child('creatrtrip').child(id).child('track');
+write.set({status:'open'});
+location.reload();
+});
+
+
+    </script>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context="com.home.myapplication.MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/um_hos_list"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/um_disp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:text="Display"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/um_caldist"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Calculate distance"
+        android:textColor="#F50057" />
+
+    <Button
+        android:id="@+id/um_hos_list"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@android:color/white"
+        android:text="Hospital List"
+        android:textColor="#F50057" />
+
+</RelativeLayout>
+
+
+
+

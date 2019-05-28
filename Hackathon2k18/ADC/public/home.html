@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ADC</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+.vl {
+    border-left: 2px solid grey;
+    top: 22%;
+    position: absolute;
+    height: 300px;
+}
+.aaa
+{
+    height: 87vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .vl{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aaa{
+        height: 50vh;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!-- Start your project here-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="aaa">
+                <div class="flex-center flex-column">
+                <h1 class="animated fadeInLeft mb-4">Welcome to After Death Care</h1>
+
+                <h5 class="animated fadeInLeft mb-3">Register Your Van Here</h5>
+
+                <p class="animated fadeInLeft text-muted">Thank you</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1">
+                <div class="vl animated fadeInDownBig"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="aaa">
+                <div class="flex-center flex-column">
+                <div class="card border border-info z-depth-0 animated fadeInRight">
+                    <div class="card-body text-center">
+                        <h3>Register your Van Now</h3>
+
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">
+    Register<i class="fa fa-user ml-2"></i>
+</button>
+                        
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--Modal: Contact form-->
+    <div class="modal-dialog cascading-modal" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header primary-color white-text">
+                <h4 class="title">
+                    <i class="fa fa-pencil"></i> Registration</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+
+                 <form>
+                <div class="md-form form-sm">
+                    <i class="fa fa-id-card prefix mr-3"></i>
+                    <input type="text" name="pin" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                    <label for="materialFormNameModalEx1">Enter Your Aadhar No</label>
+                </div>
+
+                
+
+                <div class="text-center mt-4 mb-2">
+                    <button class="btn btn-primary" name="aadhar">Send
+                        <i class="fa fa-send ml-2"></i>
+                    </button>
+                </div>
+            </form>
+            
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+    <!--/Modal: Contact form-->
+</div>
+                      
+
+                     
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script type="text/javascript">
+      (function(){
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZcLIz_1tbIUApRytA1ciq4r2lBU0PCNc",
+    authDomain: "adch-9c89f.firebaseapp.com",
+    databaseURL: "https://adch-9c89f.firebaseio.com",
+    projectId: "adch-9c89f",
+    storageBucket: "",
+    messagingSenderId: "196006506550"
+  };
+  firebase.initializeApp(config);
+
+
+var ref = firebase.database().ref("aadhar/" + "102030405060");
+
+ref.on("value", function(snapshot) {
+   console.log(snapshot.val());
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+
+
+}());
+  </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

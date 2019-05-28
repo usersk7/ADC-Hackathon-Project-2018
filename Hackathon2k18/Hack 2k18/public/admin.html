@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ADC</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                    <strong class="blue-text">After Death Care</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link waves-effect" href="index.html">Logout
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main>
+        <div class="container">
+<br><br><br><br><br><br><br>
+            <!--Section: Cards-->
+            <section class="text-center">
+
+                <!--Grid row-->
+                <div class="row mb-8 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+ <div class="card">
+
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Pending VAN Registration</h4>
+                                <!--Text-->
+                                <div class="card card-cascade">
+
+       
+        <div class="card-body text-center">
+
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="inputDisabledEx" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="Vno" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class= "disabled">Vehicle No</label>
+</div>
+            </div>
+        </div>
+
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show info
+</button>
+
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+    </div>
+    <!--/.Card-->
+   <!--  <a href="showallpending.html" target="_blank" class="block">Show modal-header
+                                    
+                                </a> -->
+
+                              
+                        
+
+                        
+</div></div></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+
+                            <!--Card content-->
+                            <div class="card-body">
+
+                                <!--Title-->
+                                <h4 class="card-title">Approved VAN'S</h4>
+    <!--Text-->
+                                <div class="card card-cascade">
+
+       
+        <div class="card-body text-center">
+
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="name" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="vehno" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Vehicle Number</label>
+</div>
+            </div>
+        </div>
+
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show info
+</button>
+
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+    </div>
+
+
+
+
+                                <!-- <a href="https://mdbootstrap.com/automated-app-start/" target="_blank" class="block">Show More
+                                    
+                                </a> -->
+
+
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+
+            </section>
+            <!--Section: Cards-->
+
+
+            <section class="text-center">
+
+                <!--Grid row-->
+                <div class="row mb-5 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                         <div class="card">
+
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Pending Hospital Registration</h4>
+                                <!--Text-->
+
+
+        <div class="card-body text-center">
+
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="hospname" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="regid" class="form-control" value= "     " disabled>
+    <label for="inputDisabledEx" class="disabled">Registration ID</label>
+</div>
+            </div>
+        </div>
+
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hospshow">Show info
+</button>
+
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+    </div>
+
+
+<!-- 
+                                <a href="https://mdbootstrap.com/automated-app-start/" target="_blank" class="block">Show More
+                                   
+                                </a> -->
+                            </div>
+
+                        </div><!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Approved Hospitals</h4>
+                                <!--Text-->
+                                
+
+        <div class="card-body text-center">
+
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="inputDisabledEx" class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form">
+    <input type="text" id="inputDisabledEx" class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled"> Registration ID</label>
+</div>
+            </div>
+        </div>
+
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show info
+</button>
+
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+    </div>
+
+
+<!-- 
+                                <a href="https://mdbootstrap.com/automated-app-start/" target="_blank" class="block">Show More
+                                     -->
+                                </a>
+                            </div>
+                        
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+
+            </section>
+            <!--Section: Cards-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pending VAN Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+<!--Card-->
+    <div class="card card-cascade">
+<div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="showname" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled"> First Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form ">
+    <input type="text" id="shownamel" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Last Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+     <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="VeNo" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Vehicle No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form  mr-3">
+    <input type="text" id="RC"  value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">RC No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+ <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form  ml-3">
+    <input type="text" id="AdharNo" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Aadhaar No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form mr-3">
+    <input type="text" id="Lno" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled"> License No.
+    </label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+ <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="Ino" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Insurance No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form mr-3">
+    <input type="text" id="email" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Email-Id</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+     <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="Cno" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled"> Contact No</label>
+</div>
+            </div>
+            <!-- <div class="btn-group" data-toggle="buttons"> -->
+  <!-- <label class="btn btn-primary active"> -->
+    <div class="text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" > RC Book</button>  
+  <!-- </label> -->
+  <!-- <label class="btn btn-primary"> -->
+
+<!-- start image 1 -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F1111.png?alt=media&token=4ab25c42-68dd-4ee9-90af-d5e65f4b1475"  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end image 1 -->
+
+
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1""> License No</button> 
+  <!-- </label> -->
+  <!-- <label class="btn btn-primary"> -->
+
+    <!-- start image 2 -->
+
+
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F01234sk787.jpg?alt=media&token=1ac7534f-c6df-413b-9741-fdd3b1ac6cee"  class="img-fluid">
+        </div>
+    </div>
+  </div>    
+</div>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3"> Aadhaar No</button> 
+  <!-- </label> -->
+    <!-- start image 3 -->
+
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F01234sk787.jpg?alt=media&token=1ac7534f-c6df-413b-9741-fdd3b1ac6cee""  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- end image 3 -->
+  <!-- <label class="btn btn-primary"> -->
+    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal4"> NOC</button> 
+  <!-- </label> -->
+<div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+        <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F1111.png?alt=media&token=4ab25c42-68dd-4ee9-90af-d5e65f4b1475"  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- start image 3 -->
+
+
+
+
+  <!-- end image 4 -->
+</div>
+</div>
+        </div>
+        <!-- Grid column -->
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="modal-footer">
+                <button type="button" id="rej" class="btn btn-secondary" data-dismiss="modal">Reject</button>
+                <button type="button" id="appr" class="btn btn-primary" >Approve</button>
+                <a href="showallpending.html" ><button type="button" class="btn btn-primary">Show All</button></a>
+            </div>
+    </div>
+        </div>
+        <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->
+
+
+    <!-- Modal -->
+<div class="modal fade" id="hospshow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pending VAN Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+<!--Card-->
+    <div class="card card-cascade">
+<div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="hname" value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Hospital Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form ">
+    <input type="text" id="hadd" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Hospital Address</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+     <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="hid" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Hospital ID</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form  mr-3">
+    <input type="text" id="contactno"  value=" " class="form-control" disabled>
+    <label for="inputDisabledEx" class="disabled">Contact No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+ <div class="row">
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form mr-3">
+    <input type="text" id="tele" value=" " class="form-control ml-3  " disabled>
+    <label for="inputDisabledEx" class="disabled">Telephone No</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+ <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+   <!-- Material input -->
+<div class="md-form ml-3">
+    <input type="text" id="adminname" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Admin Name</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+            <div class="md-form mt-0">
+                   <!-- Material input -->
+<div class="md-form mr-3">
+    <input type="text" id="pincode" value=" " class="form-control " disabled>
+    <label for="inputDisabledEx" class="disabled">Pin Code</label>
+</div>
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+    </div>
+
+     <div class="row">
+        <!-- Grid column -->
+        <div class="col">
+            <!-- Material input -->
+          
+            <!-- <div class="btn-group" data-toggle="buttons"> -->
+  <!-- <label class="btn btn-primary active"> -->
+    <div class="text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" > RC Book</button>  
+  <!-- </label> -->
+  <!-- <label class="btn btn-primary"> -->
+
+<!-- start image 1 -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F1111.png?alt=media&token=4ab25c42-68dd-4ee9-90af-d5e65f4b1475"  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end image 1 -->
+
+
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1""> License No</button> 
+  <!-- </label> -->
+  <!-- <label class="btn btn-primary"> -->
+
+    <!-- start image 2 -->
+
+
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F01234sk787.jpg?alt=media&token=1ac7534f-c6df-413b-9741-fdd3b1ac6cee"  class="img-fluid">
+        </div>
+    </div>
+  </div>    
+</div>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3"> Aadhaar No</button> 
+  <!-- </label> -->
+    <!-- start image 3 -->
+
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F01234sk787.jpg?alt=media&token=1ac7534f-c6df-413b-9741-fdd3b1ac6cee""  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- end image 3 -->
+  <!-- <label class="btn btn-primary"> -->
+    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal4"> NOC</button> 
+  <!-- </label> -->
+<div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+        <img src="https://firebasestorage.googleapis.com/v0/b/adch-9c89f.appspot.com/o/Registration%2F1111.png?alt=media&token=4ab25c42-68dd-4ee9-90af-d5e65f4b1475"  class="img-fluid">
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- start image 3 -->
+
+
+
+
+  <!-- end image 4 -->
+</div>
+</div>
+        </div>
+        <!-- Grid column -->
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="modal-footer">
+                <button type="button" id="rej" class="btn btn-secondary" data-dismiss="modal">Reject</button>
+                <button type="button" id="appr" class="btn btn-primary"> Approve</button>
+                <a href="showallpending.html" ><button type="button" class="btn btn-primary">Show All</button></a>
+            </div>
+    </div>
+        </div>
+        <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->            
+      <!--   </div>
+    </div>
+</div> -->
+        
+  <!--Footer-->
+  <footer class="page-footer text-center font-small">
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="index.html">afterdeathcare.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+
+<script>
+
+
+
+     var config = {
+    apiKey: "AIzaSyDZcLIz_1tbIUApRytA1ciq4r2lBU0PCNc",
+    authDomain: "adch-9c89f.firebaseapp.com",
+    databaseURL: "https://adch-9c89f.firebaseio.com",
+    projectId: "adch-9c89f",
+    storageBucket: "adch-9c89f.appspot.com",
+    messagingSenderId: "196006506550"
+  };
+  firebase.initializeApp(config);
+            var ref=firebase.database().ref().child('Register').child('MH14CX5589').child('info');  
+             ref.on('value', snap=>{
+                var aadhaar = snap.val().aadhar;
+                console.log(aadhaar);
+                var email = snap.val().email;
+                var fname= snap.val().fname;
+                var insurance = snap.val().insurance;
+                var licno= snap.val().liceneno;
+                var lname = snap.val().lname;
+                var mname =snap.val().mname;
+                var phone = snap.val().phone;
+                var rcno = snap.val().rcno;
+                var status = snap.val().status;
+                var vehicleno =     snap.val().vechileno;
+                document.getElementById('inputDisabledEx').value = fname;
+                document.getElementById('Vno').value = vehicleno;
+                document.getElementById('showname').value = fname;
+                document.getElementById('Cno').value = phone;
+                document.getElementById('Lno').value = licno;
+                document.getElementById('AdharNo').value =aadhaar;
+                document.getElementById('Ino').value = insurance;
+                document.getElementById('email').value = email;
+                document.getElementById('Ino').value = insurance;
+                document.getElementById('shownamel').value = lname;
+                document.getElementById('VeNo').value = vehicleno;
+                document.getElementById('RC').value = rcno;
+    
+
+
+
+             });
+    
+
+
+      var ref=firebase.database().ref().child('Register').child('MH14FB3182').child('info');  
+             ref.on('value', snap=>{
+                var aadhaar = snap.val().aadhar;
+                console.log(aadhaar);
+                var email = snap.val().email;
+                var fname= snap.val().fname;
+                var insurance = snap.val().insurance;
+                var licno= snap.val().liceneno;
+                var lname = snap.val().lname;
+                var mname =snap.val().mname;
+                var phone = snap.val().phone;
+                var rcno = snap.val().rcno;
+                var status = snap.val().status;
+                var vehicleno =     snap.val().vechileno;
+                
+                
+
+
+             });
+
+                 var re = firebase.database().ref().child('Register-hosp').child('MAHB-10-1').child('info');
+               re.on('value', snap=>{
+                    var hsname = snap.val().hospname;
+hospname
+document.getElementById('hospname').value= hsname;
+                    var addr= snap.val().hospadd;
+                    var tel = snap.val().phone;
+                    var contc = snap.val().contact;
+                    var adminname = snap.val().adminname;
+                    var pincode = snap.val().pin;
+                    var id = snap.val().hospid;
+                    document.getElementById('hname').value = hsname;
+                    document.getElementById('regid').value = id;
+                    document.getElementById('hadd').value= addr;
+                    document.getElementById('contactno').value= contc;
+                    document.getElementById('pincode').value= pincode;
+                    document.getElementById('adminname').value= adminname;
+                    document.getElementById('tele').value= tel;
+                    document.getElementById('hid').value= tel;
+                    
+               });
+
+var btt = document.getElementById('appr');
+
+btt.addEventListener('click',function(){
+var ref= firebase.database().ref().child('Register').child('MH14CX5589').child('info');
+ ref.on('value', snap=>{
+                var aadhaar = snap.val().aadhar;
+                console.log(aadhaar);
+                var email = snap.val().email;
+                var fname= snap.val().fname;
+                var insurance = snap.val().insurance;
+                var licno= snap.val().liceneno;
+                var lname = snap.val().lname;
+                var mname =snap.val().mname;
+                var phone = snap.val().phone;
+                var rcno = snap.val().rcno;
+                var status = snap.val().status;
+                var vehicleno =     snap.val().vechileno;
+                 var ref1 = firebase.database().ref().child('Approved   Van');
+ref1.set({fname: fname, lname: lname,vehicle:vehicleno, aadhaar: aadhaar, lice:licno, insu: insurance, phone: phone, rc: rcno, password:"74312"});
+    
+
+
+    window.alert("VAN registerd successfully");
+
+
+    location.reload();
+                
+
+
+             });
+    // ref.update({status:"Approved"});
+    // console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+
+
+//     var ref1 = firebase.database().ref().child('Approved Van');
+// ref1.set({fname:, lname: ref.val().lname,vehicle:ref.val().vechileno, aadhaar: ref.val().aadhar, lice:ref.val().liceneno, insu: ref.val().insurance, phone: ref.val().phone, rc: ref.val().rcno, password:"743"});
+//     window.alert("VAN registerd successfully");
+
+
+//     location.reload();
+    // document.getElementById('name').value = document.getElementById(fname).value;
+    // document.getElementById('vehno').value = document.getElementById(VeNo).value;
+
+
+
+});
+
+
+
+</script>
+<script>
+
+
+
+
+
+// var ref= firebase.database().ref().child('Register').child('MH14CX5589').child('info'); 
+//     // ref.update({status:"Approved"});
+//     // console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+
+
+//     var ref1 = firebase.database().ref().child('Approved Van');
+// ref1.set({fname:ref.val().fname, lname: ref.val().lname,vehicle:ref.val().vechileno, aadhaar: ref.val().aadhar, lice:ref.val().liceneno, insu: ref.val().insurance, phone: ref.val().phone, rc: ref.val().rcno, password:"743"});
+//     window.alert("VAN registerd successfully");
+
+
+//     location.reload();
+//     document.getElementById('name').value = document.getElementById(fname).value;
+//     document.getElementById('vehno').value = document.getElementById(VeNo).value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

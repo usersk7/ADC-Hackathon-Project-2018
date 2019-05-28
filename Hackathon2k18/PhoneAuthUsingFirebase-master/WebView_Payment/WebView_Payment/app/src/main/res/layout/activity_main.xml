@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.home.webview_payment.MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:weightSum="10"
+            >
+
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:text="PAYMENT"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:layout_marginTop="44dp" />
+
+
+    <Button
+        android:id="@+id/btn_paytm"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textGrid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="PayTm" />
+
+
+
+    <Button
+        android:id="@+id/btn_sbi"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/btn_paytm"
+        android:layout_below="@+id/btn_paytm"
+        android:layout_marginTop="41dp"
+        android:text="SBI Net" />
+
+
+</RelativeLayout>
