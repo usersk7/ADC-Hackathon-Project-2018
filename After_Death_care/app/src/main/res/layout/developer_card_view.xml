@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/outer_card"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hosp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hospital Name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/sourc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Name"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dest"
+        android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Destination Name"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Contact No : "
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:layout_weight="3"
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No : "
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Type :"
+        android:layout_weight="3"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Type : "
+        android:layout_weight="3"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pincode : "
+        android:layout_weight="3"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pincode"
+        android:layout_weight="3"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+</LinearLayout>
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Accept"
+        android:textColor="#ffffff"
+        android:textSize="22dp" />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
